@@ -1,7 +1,9 @@
-ReadOperation.java
- ReadOperation
 CensusException.java
  CensusException
  CensusException$Message
+ReadOperation.java
+ ReadOperation
+StateCode.java
+ StateCode
 CensusAnalyser.java
  CensusAnalyser

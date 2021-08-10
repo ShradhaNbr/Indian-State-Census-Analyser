@@ -2,16 +2,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CensusAnalyser extends Throwable {
+public class StateCode {
+
     public static void main(String[] args) throws CensusException, IOException {
-        String filePathRead = "C:\\Users\\HP\\java\\day19\\Indian States Census\\IndiaStateCensusData.csv";
-        String fileName = "IndiaStateCensusData";
-        String delimiter =",";
+        String filePathRead = "./src/main/resources/StateCode.csv";
+        String fileName = "StateCode";
+        String delimiter = ",";
         List<String> stringName = new ArrayList<>();
+        stringName.add("SrNo");
         stringName.add("State");
-        stringName.add("Population");
-        stringName.add("AreaInSqKm");
-        stringName.add("DensityPerSqKm");
+        stringName.add("Name");
+        stringName.add("TIN");
+        stringName.add("StateCode");
 
         ReadOperation readObj = new ReadOperation();
         int count = readObj.readDataCount(filePathRead, fileName);

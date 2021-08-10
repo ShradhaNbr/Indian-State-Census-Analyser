@@ -82,7 +82,7 @@ public class CensusAnalyserTest {
          * Returns a Custom Exception
          */
         @Test
-        public void givenStateCensusCSVFileCorrect_ButHeaderIncorrectShouldThowException() {
+        public void givenStateCensusCSVFileCorrect_ButHeaderIncorrectShouldThrowsException() {
             List<String> stringName = new ArrayList<>();
             String filePathRead = "\\Users\\HP\\java\\day19\\Indian States Census\\IndiaStateCensusData.csv";
             stringName.add("State");
